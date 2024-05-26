@@ -3,9 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <div class="top-wrapper">
+      <a href="#top"><h1>My Portfolio</h1></a>
+
+      <div class="top-right">
+        <a href="#aboutMe"><h3>About me</h3></a>
+        <a href="#miniGame"><h3>Mini game</h3></a>
+      </div>
+    </div>
+
+    <div class="main-wrapper">
+      <img src="image/yuu0024-009.jpg" class="main-img" id="top" />
+
+      <div class="profile" id="aboutMe">
+        <h3>Profile</h3>
+        <ul>
+          <li>Name : Shun Ohyama</li>
+          <li>Birth : 2003.11.27</li>
+          <li>From : Ibaraki</li>
+          <li>Major : Informatics</li>
+          <li>Hobby : Music(Japanese Rock)</li>
+          <li>Dream : Engineer</li>
+        </ul>
+      </div>
+
+      <img src="image/yuu0074-033.jpg" class="main-img" />
+
+      <div class="omikuji" id="miniGame">
+        <h3>Omikuji</h3>
+        <button id="omikuji-button">おみくじを引く</button>
+        <div id="omikuji-result" class="result"></div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,72 @@
+body {
+  width: 100%;
+}
+
+.top-wrapper {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  border-bottom: 5px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  background-color: paleturquoise;
+}
+
+.top-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.top-right h3 {
+  margin: 10px;
+}
+
+.main-img {
+  object-fit: cover;
+  width: 100%;
+  height: 700px;
+  object-position: 50% 100%;
+  opacity: 0;
+}
+
+.main-img.animation {
+  animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.profile {
+  text-align: center;
+  height: 500px;
+  padding-top: 200px;
+  margin-bottom: 100px;
+  line-height: 50px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.omikuji {
+  text-align: center;
+  padding: 200px;
+  line-height: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
